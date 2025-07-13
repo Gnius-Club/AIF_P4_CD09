@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 9: Programadores de Semanas Épicas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 9: Programadores de Semanas Épicas</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+                <li><a href="#activity-6">6</a></li>
+                <li><a href="#activity-7">7</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Gestionar el tiempo de tecnología de forma equilibrada.</li>
+                                        <li>Organizar tiempos digitales, físicos y escolares mediante horarios visuales.</li>
+                                        <li>Fomentar la autonomía en la organización digital-semanal.</li>
+                                        <li>Evaluar su propia rutina digital.</li>
+                                        <li>Construir un plan visual semanal que equilibre el tiempo frente a pantallas con otras actividades.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Activación Gnius Club</strong></li>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Objetivos de la Misión: "I Can Statement"</strong></li>
+                                        <li><strong class="tactic-highlight">Brain Boost</strong></li>
+                                        <li><strong class="tactic-highlight">Gamer Express</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge</strong></li>
+                                        <li><strong class="tactic-highlight">Clave Secreta de la Misión</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Diseño de un planificador semanal visual ("Software Semanal V1.0") que equilibre actividades digitales, físicas y escolares.</li>
+                                        <li>Identificación de "bugs" (desequilibrios) en un plan semanal y propuesta de mejoras.</li>
+                                        <li>Internalización y memorización del "Código del Programador Sabio".</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Cuaderno y colores.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Activación Gnius Club ⏰ 3 minutos</h2>
+                <p>Presentar la dinámica de activación para estimular el pensamiento deductivo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Activación Gnius Club ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Activación: Adivina el Concepto con Pistas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Atención, Programadores! 💻 ¡A sus terminales! Para iniciar el código de hoy, jugaremos 'Adivina el Concepto con Pistas'. Yo describiré una idea sobre cómo organizamos nuestro tiempo, y ustedes deben adivinar la palabra exacta. ¡El primer equipo en adivinar gana un punto Gnius!<br>""Horario"", ""Rutina"" o ""Desbalance"""</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación Gnius Club ⏰ 2 minutos</h3>
+                            <p>Da pistas para conceptos como "Horario", "Rutina" o "Desbalance". El grupo adivina.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Primera pista: Soy una tabla con días y horas, me ayudas a saber qué hacer y cuándo... ¿Qué soy? ¡Un HORARIO! ¡Correcto! Segunda pista: Soy lo que pasa cuando solo juegas videojuegos y olvidas la tarea, tu energía se va a un solo lado... ¿Qué soy? ¡Un DESBALANCE! ¡Exacto! ¡Esa habilidad para nombrar los problemas es el primer paso para solucionarlos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Recuerdo Relámpago ⏰ 4 minutos</h2>
+                <p>Activar el conocimiento previo usando la pregunta clave de la misión anterior.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Recuerdo Relámpago: La Fórmula del Equilibrio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Programadores! Antes de escribir nuestro nuevo software, recordemos nuestra fórmula de la misión pasada: 🧠 (Mente) + 🏃‍♂️ (Cuerpo) + 🎮 (Digital) = 😊 (Día Genial). Pero esa fórmula nos dejó una pregunta: Si ya sabemos los ingredientes de un día genial, ¿cómo nos aseguramos de que no se nos olvide ninguno durante toda una semana?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes que, en parejas, discutan la pregunta. Conecta sus respuestas con la misión de hoy.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Discutan con su compañero de equipo. ¿Cómo recordamos las cosas importantes? (Pausa). ¡'Con una agenda', 'un calendario', 'un plan'! ¡Exacto! Una buena fórmula necesita un buen programa que la ejecute. Hoy pasaremos de ser alquimistas a ser programadores de nuestro propio tiempo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Objetivos de la Misión: "I Can Statement" ⏰ 3 minutos</h2>
+                <p>Presentar la meta de la sesión con una metáfora de programación y diseño de software.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Objetivos de la Misión: "I Can Statement" ⏰ 1.5 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Objetivos de la Misión. (Imagen de un estudiante diseñando una app de calendario semanal en una computadora, arrastrando bloques de colores llamados "Estudio", "Juego Físico", "Tiempo Digital" y "Descanso").</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipo! Nuestra misión de hoy es convertirnos en PROGRAMADORES DE SEMANAS ÉPICAS. Nuestro tiempo es como un programa de computadora. Si no lo escribimos bien, se llena de 'bugs' (errores) como el aburrimiento o el estrés. Hoy aprenderemos a escribir un código semanal claro, eficiente y ¡súper divertido!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivos de la Misión: "I Can Statement" ⏰ 1.5 minutos</h3>
+                            <p>Pide a los estudiantes que escriban o dibujen su "I Can Statement" y lo compartan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Todo programador tiene una función especial. La mía es: 'Yo puedo escribir el código para una tarde de viernes que equilibre tarea y celebración'. Ahora ustedes, en su consola de desarrollo, completen: 'Hoy el código que escribiré para mi semana va a...'.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Brain Boost ⏰ 5 minutos</h2>
+                <p>Despertar la curiosidad con una historia que ilustra las consecuencias de una mala planificación semanal.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Brain Boost ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Brain Boost: El Caso del Proyecto Olvidado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Imaginen a Mateo. El lunes, el maestro anuncia un gran proyecto de historia para el viernes. Mateo piensa 'tengo toda la semana' y dedica lunes, martes y miércoles a jugar su nuevo videojuego después de la escuela. ¡Está a punto de vencer al jefe final!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Brain Boost ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 6. El Jueves de Pánico. (Imagen de Mateo el jueves en la noche, con cara de estrés, rodeado de libros y materiales, mientras su control de videojuego está a un lado).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Llega el jueves por la noche. Mateo se da cuenta de que no ha empezado el proyecto y entra en pánico. Tiene que quedarse despierto hasta muy tarde, lo entrega a medio terminar, cansado y sin poder disfrutar de haber vencido al jefe final. ¿El videojuego fue el problema? ¿O fue la falta de un 'código' o 'plan' para su semana?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Brain Boost ⏰ 1 minutos</h3>
+                            <p>Conecta la historia con el objetivo de la misión: aprender a ser el programador y no la víctima de la semana.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Exacto! ¡El problema fue la falta de un plan! Dejó que su semana corriera en 'modo aleatorio' en lugar de escribir su propio programa. Un buen programador distribuye las tareas para que el sistema no se sobrecargue al final. ¡Hoy vamos a aprender a escribir ese código sin bugs!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gamer Express ⏰ 10 minutos</h2>
+                <p>Practicar la organización visual de una semana en un entorno gamificado.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gamer Express ⏰ 10 minutos</h3>
+                            <p>Da la instrucción y los estudiantes ingresan a la plataforma para jugar el minijuego de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Es hora de ir a la 'IDE' o Entorno de Desarrollo Integrado! Ingresen a la plataforma y jueguen la misión 'Planificador Semanal 2.0'. Su misión: crear la semana más eficiente y balanceada. ¡Cero bugs permitidos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-6">
+                <h2>⚡ Actividad 6: Challenge ⏰ 10 minutos</h2>
+                <p>Introducir el reto creativo y de diseño como la programación de su "Software Semanal".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 8. Challenge: Tu Software Semanal V1.0.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Han demostrado ser programadores de élite! Ahora, la prueba final. Van a diseñar el software más importante de todos: el programa que correrá su propia semana. ¡Bienvenidos a la creación de su Software Semanal V1.0! 🧑‍💻</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 9. La Interfaz y los Módulos. Presenta y explica la "interfaz" del planificador y los "módulos" a programar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Esta es su interfaz en blanco: una tabla de Lunes a Domingo. Su misión es llenarla usando los 4 'Módulos de Poder':<br>1. Módulo Escolar 📚: Aquí va todo lo relacionado con aprender: hacer la tarea, estudiar para un examen, leer un libro. <br>2. Módulo Digital 🎮: Su tiempo para videojuegos, ver videos, chatear con amigos. ¡La diversión en pantalla! <br>3. Módulo Físico/Social 🤸‍♀️: ¡Mover el cuerpo y conectar cara a cara! Ir al parque, jugar un deporte, visitar a la familia.<br>4. Módulo de Recarga 😴: El más importante. Es su tiempo de descanso: dormir bien, estar tranquilos, no hacer nada."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge ⏰ 5 minutos</h3>
+                            <p>Proyecta Diapositiva 10. Programación Semanal. Pide a los estudiantes que, en sus cuadernos, diseñen un planificador semanal visual y luego lo "depuren" con un compañero.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡A programar! <br> Paso 1 (Programar - 3 min): Dibujen su tabla semanal. Ahora, como si fueran bloques de LEGO, coloquen sus actividades REALES o ideales en los espacios, asegurándose de que cada día tenga un poco de cada uno de los 4 módulos.<br>Paso 2 (Depurar - 2 min): ¡Ahora, a buscar bugs! Intercambien su 'código' con un compañero. Revisen su plan y encuentren un posible 'bug'. ¿Hay demasiado de un módulo y muy poco de otro? ¿Falta tiempo de recarga? ¡Sugieran una mejora constructiva!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 11. Reporte de Bugs. Refuerza el aprendizaje compartiendo los "bugs" encontrados y las soluciones propuestas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo de depuración! Equipo 'Los Testers', ¿qué 'bug' encontraron en el programa que revisaron? ¡'El Módulo Digital del sábado ocupaba toda la tarde'! ¡Buena detección! ¿Y qué mejora sugirieron? ¡'Añadir un Módulo Físico para salir a jugar'! ¡Excelente trabajo en equipo! ¡Así se crea un software robusto!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-7">
+                <h2>⚡ Actividad 7: Clave Secreta de la Misión ⏰ 5 minutos</h2>
+                <p>Consolidar la idea principal de la sesión con una pregunta poderosa.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Clave Secreta de la Misión ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 12. Clave Secreta de la Misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Son oficialmente los mejores programadores de su propio tiempo! Una última pregunta: ¿cuál es el 'código fuente' o el principio básico que un buen programador de tiempo siempre recuerda?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Clave Secreta de la Misión ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 13. El Código del Programador Sabio. Presenta los 3 comandos clave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Exacto! ¡El balance! ¡El plan! Para que siempre tengan su código a mano, esta es su nueva clave secreta: el Código del Programador Sabio. Son 3 comandos simples: <br>✨ planifica(tu_semana); 🗓️<br>✨ ejecuta(con_energía); 💪 <br>✨ depura(y_mejora); 🧐</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Clave Secreta de la Misión ⏰ 2 minutos</h3>
+                            <p>Repite los "comandos" con gestos. Lanza la pregunta de conexión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Vamos a correr el programa! ¡Planifica! (hacen como que escriben). ¡Ejecuta! (se ponen de pie con energía). ¡Depura! (hacen un gesto de lupa). ¡Perfecto! Guarden este código, porque nos deja una pregunta: Si ya sabemos programar nuestro tiempo, ¿cómo podemos usar la IA y la tecnología para ayudarnos a aprender y crear de formas que nunca antes habíamos imaginado? 🤔 ¡Nos vemos en la próxima misión!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
